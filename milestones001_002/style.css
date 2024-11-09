@@ -1,12 +1,13 @@
 body {
   
+  
     font-family:  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(49, 44, 44);
     margin: 0;
     padding: 20px;
     
   
-  
+
   }
   h1{
     justify-content: center;
@@ -121,28 +122,59 @@ body {
   
   /* Skills Section */
   #skills {
-    font-size: x-large;
-    font-weight: 900;
-    margin-top: 5px; /* Pushes the skills section to the bottom of the left column */
-  }
+    
   
-  #skills .skill {
-    margin-bottom: 60px;
+    
+    font-size: small;
+    font-weight: 800;
+    margin-bottom: 50px; 
+    padding: 20px;
     border: 1px solid rgb(248, 207, 3); /* Border around the skill elements */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 0 14px rgba(147, 244, 239, 0.982); 
 
-    padding: 10px;
   }
   
-  .skis, .pss {
-    margin-top: 35px;
+   .skill {
+    padding:20px;
+  
+    margin-bottom: 20px;
+    border: 1px solid rgb(248, 207, 3); /* Border around the skill elements */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 14px rgba(147, 244, 239, 0.982); 
+
+  
+  }
+  .skis{
+    font-size:xx-large;
+    padding: 30px;
     color: white;
-    padding: 10px;
+  margin-bottom: 20px;
+    border: 2px solid rgb(248, 207, 3);
+    border-radius: 5px; 
+    box-shadow: 0 0 14px rgba(147, 244, 239, 0.982);
+  }
+  
+  .pss {
+    font-size:x-large;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px;
     border: 2px solid rgb(248, 207, 3);
     border-radius: 5px; 
     box-shadow: 0 0 14px rgba(147, 244, 239, 0.982); 
     
+  }
+
+
+  .skill input[type="text"] {
+    width: 100px; /* Set width for skill input fields */
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 5px;
   }
   
   
@@ -192,7 +224,8 @@ body {
     background-color: #510441;
   }
   .analytical-thinking-bar{
-    width: 90%;
+  
+    width: 95%;
     background-color: #f2cd39;
   }
   .debugging-bar{
@@ -218,6 +251,8 @@ body {
   
   /* Right Section */
   .right-section {
+  
+   
     padding: 30px;
   border-radius: 10px;
     width: 65%;
@@ -229,7 +264,7 @@ body {
     
   }
 
-  .info-input{
+  .info-input input[type="text"]{
     
   
     border: 2px solid rgb(248, 207, 3);
@@ -238,7 +273,7 @@ body {
     width: 50%;
     
   
-    font-size: 15px;
+    font-size: 24px;
 
   }
  
@@ -261,7 +296,7 @@ body {
   
   .right-section p,
   .right-section ul {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 800;
     border: 1px solid rgb(248, 207, 3); /* Border around text elements */
     border-radius: 5px; /* Rounded corners */
@@ -273,7 +308,7 @@ body {
   
   .links {
     display: flex; /* Displays list items in a row */
-    gap: 10px; /* Adds space between list items */
+    gap: 6px; /* Adds space between list items */
     padding: 0px;
   
     list-style-type: none; /* Removes default bullet points */
@@ -281,7 +316,7 @@ body {
   }
   
   .link {
-    margin-right: 8%;
+    margin-right: 0%;
     list-style-type: circle; /* Adds a circle bullet to each item */
     list-style-position: inside;
     display: flex;
@@ -354,28 +389,48 @@ body {
   
   
   /* Toggle Button */
-  button {
-    margin-bottom: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0ca0dcb;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
+  /* Container to center the button */
+.btn {
+  height: 2% ;
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center;
+}
+
+/* Toggle Button */
+#toggle-hobbies {
   
-  button:hover {
-    background-color: #21b6b1;
-  }
+  font-size:medium;
+  margin-bottom: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0ca0dcb;
+  color: white;
+  padding:10px  30%; /* Adjusted for larger width */
+  width: 200px; /* Set a larger width */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  text-align: center; /* Centers the text within the button */
+}
+
+#toggle-hobbies:hover {
+  background-color: #21b6b1;
+}
+
   
   /* Responsive Layout */
   
   @media (max-width: 1232px){
     .profile-picture{
       margin-left: -8px;
+    }
+    /* .info-input{
+font-size: 20px;
+    } */
+    h1{
+      font-size: 70px;
     }
   }
   
@@ -397,6 +452,10 @@ body {
       padding: 10px;
       border-right: none;
     }
+    
+ /* .info-input{
+font-size: 20px;
+    } */
   
     .left-section {
       border-bottom: 6px solid rgb(248, 207, 3); /* Thinner border for mobile view */
@@ -404,9 +463,18 @@ body {
     .profile-picture{
       margin-left: 18px;
     }
-  
+    /* .info-input{
+      font-size: 20px;
+          } */
   
   }
+
+  @media (max-width: 480px) {
+    /* .info-input {
+      font-size: 14px;
+    } */
+  }
+
   
   
   @media (min-width: 320px) {
@@ -419,5 +487,24 @@ body {
       padding: 0; /* Remove padding around the text */
       margin: 0; /* Remove margin around the text */
     }
+    .link{
+      font-size: smaller;
+      margin-left: 15px;
+    }
+    .links{
+      font-size: smaller;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    
+    }
+    #objective{
+      margin-top: 30px;
+    }
+    h1{
+      font-size: 50px;
+    }
     
   }
+
